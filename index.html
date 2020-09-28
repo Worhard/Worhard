@@ -8,26 +8,46 @@
 </head>
 
 <body>
-    <img src="image\image1.jpg" alt="小王子" width="600" height="400">
-    <img src="C:\Users\ASUS\Desktop\代码\HTML网页\image\image2.jpg" alt="小王子" width="600" height="400">
-    <h1>标题1</h1>
-    <h2>标题2</h2>
+
+    <!-- 常用快捷键 -->
+    <!-- 整行注释           ctrl + / -->
+    <!-- 部分注释       shift + alt + A -->
+    <!-- 删除行         ctrl + shift + k -->
+    <!-- 复制/剪切行    ctrl + c/x -->
+    <!-- 选择           ctrl （+ shift+） 左/右 -->
+    <!-- 下/上 插一行    ctrl (+shift)+ enter-->
+
+
+
+    <!--图片----------------------------------------------->
+    <img src="image\image1.jpg" alt="小王子" height="200">      <!--相对位置-->
+    <img src="C:\Users\ASUS\Desktop\代码\HTML网页\image\image2.jpg" alt ="小王子" height="200">  <!--绝对位置-->
+    <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=620992881,2867342320&fm=26&gp=0.jpg" height="200"  
+    alt="runoob.com">  <!--链接图片--> <!--alt 图片显示不出来时显示的文字-->         
+
+
+    <!--文本----------------------------------------------->
+    <h1>标题1</h1>  <!-- 标题 -->  
+    <h2>标题2</h2>  
     <h3>标题3</h3>
     <h4>标题4</h4>
     <h5>标题5</h5>
     <h6>标题6</h6>
-    正文
-    <p>这个<br>段落<br>演示了分行的效果</p>
-    <!--注释，不显示-->
-    <p>这是一个普通的文本- <b>这是一个加粗文本</b>。</p>
-
-    <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=620992881,2867342320&fm=26&gp=0.jpg" alt="runoob.com" width="600" height="400">
 
 
-    <p>创建图片链接:<br>
+
+    <p>这个<br>段落<br>演示了分行的效果</p> <!--段落-->
+
+    <p>这是一个普通的文本- <b>这是一个加粗文本</b>。</p>    <!--文本加粗-->
+
+    
+
+    <!--链接------------------------------------------------>
+    <h1>超链接</h1>
+    <h2>外部链接</h2>
+    <p>创建图片链接:<br>    <!--图片链接-->
         <a href="//www.runoob.com/html/html-tutorial.html">
-            <img border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a>
-        <!--boder图片边框-->
+           <img border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a><!--boder图片边框-->
     </p>
 
     <p>无边框的图片链接:<br>
@@ -35,9 +55,19 @@
             <img src="smiley.gif" alt="HTML 教程" width="32" height="32"></a>
     </p>
 
+    <h2>内部链接</h2>
+    <a href="zp_2/zp_2_表格.html">表格</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="zp_2/zp_3_列表.html">列表</a><br>
+
+
+
+
+
+
+
+    <!--音频----------------------------------------------->
     <!--<embed height="50" width="100" src="audio/Lemon甜橙君 - 假如爱有天意钢琴曲.mp3">
     <object height="50" width="100" data="audio/Lemon甜橙君 - 假如爱有天意钢琴曲.mp3"></object>-->
-
     <audio controls height="100" width="100">
         <source src="audio/Lemon甜橙君 - 假如爱有天意钢琴曲.mp3" type="audio/mpeg">
         <source src="audio/Lemon甜橙君 - 假如爱有天意钢琴曲.ogg" type="audio/ogg">
@@ -47,6 +77,37 @@
     <a href="audio/Lemon甜橙君 - 假如爱有天意钢琴曲.mp3">Play the sound</a>
 
 
+
+
+    <!--视频------------------------------------------------>
+    <video width="320" height="240" controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        <source src="video/video1.ogg" type="video/ogg">
+        <source src="video/video1.webm" type="video/webm">
+
+        <object data="video/video1.mp4" width="320" height="240">
+        <embed src="video/video1.swf" width="320" height="240">
+        </object>
+    </video>
+
+    <br><a href="video/video1.mp4" target="_blank">访问菜鸟教程!</a>
+
+
+
+    <!-- div   span --------------------------------------------->
+    <div><span>div盒子</span>   
+        <span><img src="image/image3.gif" height="200"></span>
+        <span><img src="image/image4.gif" height="200"></span>
+        <span><img src="image/image5.gif" height="200"></span>
+    </div>
+
+   
+    <!-- 特殊字符 ----------------------------------------------->
+    <p>输出空格&nbsp;空格</p>
+    <p>输出&lt;小于/大于号&gt;</p>
+
+
+    
 </body>
 
 </html>
